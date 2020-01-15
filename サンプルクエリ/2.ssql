@@ -1,0 +1,5 @@
+GENERATE HTML
+[ (asc)d.id, [ (desc)e.id ,e.name]! ]! 
+@{debug='on'}
+FROM dept d, employee e
+WHERE d.manager=e.manager

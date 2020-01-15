@@ -1,0 +1,63 @@
+[クエリを実行]
+■実行ファイル: /Users/tasuku/ssedit_X/サンプルクエリ/3.ssql
+
+＜詳細＞
+//Entering SuperSQL System//
+[Parser:Parser] filename = /Users/tasuku/ssedit_X/サンプルクエリ/3.ssql
+GENERATE HTML
+[ (asc)d.id, [ (desc)e.id ,e.name]! ]! 
+@{debug='on'}
+FROM dept d, employee e
+WHERE d.manager=e.manager
+Schema is[[0, [1, 2]]]
+le0 is [HTMLG2, [HTMLC1, [0], [HTMLG2, [HTMLC1, [1], [2]]]]]
+Make SQL Time:4ms
+Query is : SELECT d.id, e.id, e.name FROM dept d,employee e WHERE d.manager = e.manager ;
+
+********** SQL is **********
+SELECT d.id, e.id, e.name FROM dept d,employee e WHERE d.manager = e.manager ;
+
+File encoding: UTF-8
+ExecTime: 904msec
+// completed normally //
+######### T_Parser Result ########
+[dmy9, dmy, dmy]
+[dmy, dmy, dmy]
+d.id
+,
+e.id
+,
+e.name
+54??6678787
+GENERATE HTML
+[ (asc)d.id, [ (desc)e.id ,e.name]! ]! 
+
+FROM dept d, employee e
+WHERE d.manager=e.manager
+
+##################################
+0 0 0 0 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 1 1 2 2 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 
+[][]
+GENERATEHTML(asc)d.id,(desc)e.id,e.nameFROMdeptd,employeeeWHEREd.manager=e.manager$$$$$$$
+GENERATEHTML^(asc)d.id,^(desc)e.id,e.name*FROMdeptd,employeeeWHEREd.manager=e.manager$$$$$$$
+0
+[10000, 10001, 10002]
+1 1 2 2 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 ######## Panel Create Flow ########
+d.id
++5+
+3333333
+e.id
+e.name
+-
++-+
+123123131
+##################################
+3, 3
+######### TFE ID - TFE Name ########
+10000 - d.id
+10001 - e.id
+10002 - e.name
+##################################
+/Users/tasuku/ssedit_X
+### スタイル処理 終了 ###
+

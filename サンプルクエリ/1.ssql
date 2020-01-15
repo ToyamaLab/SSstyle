@@ -1,0 +1,4 @@
+GENERATE HTML {
+[e.id, e.name]!
+}@{debug = 'on'}
+FROM employee e;

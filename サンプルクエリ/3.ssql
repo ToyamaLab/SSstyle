@@ -1,0 +1,16 @@
+GENERATE HTML {
+"従業員リスト"@{width=320, font-size= 32, font-weight='bold', align='center'}!
+line(6, '#ff6666')!
+{"担当部署"@{width=80, align='center'}
+,"写真"@{width=80, align='center'}
+,"名前"@{width=100, align='center'}
+,"給料"@{width=70, align='center'}}!
+[d.name@{width=80}
+, [image(e.pict,'./picts')@{width=80, height=80}
+,e.name@{width=100}
+, e.salary@{width=70}]! 
+!line(3)]! 
+! a("TOPへ",'')
+}  
+ @{debug='off', table-align='center', pbgcolor='#ff9999'} FROM dept d, employee e
+WHERE d.manager = e.manager
